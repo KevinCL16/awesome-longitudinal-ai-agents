@@ -1,0 +1,37 @@
+name: Add self-improving agents survey
+
+on:
+  push:
+    paths:
+      - '.github/workflows/add-self-improving-survey.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Add survey to literature map
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          p = Path('README.md')
+          text = p.read_text()
+          marker = '## Evaluation, Surveys & Frontier Systems\n\n'
+          entry = '- [Self-Improving Agents in the Era of Experience: A Survey of Self- to Meta-Evolution](https://openreview.net/forum?id=IUltZSgLMm) — Jiang et al., OpenReview Archive 2026. Surveys self-improving agents from experience-driven component updates to meta-evolution.\n'
+          if entry not in text:
+              if marker not in text:
+                  raise SystemExit('Insertion marker not found')
+              text = text.replace(marker, marker + entry, 1)
+              p.write_text(text)
+          PY
+      - name: Commit README update
+        run: |
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add README.md
+          git diff --cached --quiet && exit 0
+          git commit -m "docs: add Self-Improving Agents survey"
+          git push
