@@ -22,6 +22,7 @@ This list maps research on that longitudinal dimension: persistent experience, e
 ## Experience, Memory & Reusable Skills
 
 - [Agent Workflow Memory](https://proceedings.mlr.press/v267/wang25bx.html) — Wang et al., ICML 2025. Retrieves reusable workflow knowledge from earlier successful executions.
+- [Procedural Graphs: Self-Evolving Execution Structures for LLM Agents](https://arxiv.org/abs/2609.09153) — Lu et al., arXiv 2026. Encodes procedural knowledge as an editable execution graph that is refined from successful and failed trajectories under held-out validation.
 - [Reflexion](https://arxiv.org/abs/2303.11366) — Shinn et al., arXiv 2023. Converts verbal feedback from failed episodes into subsequent action guidance.
 - [ExpeL](https://doi.org/10.1609/aaai.v38i17.29936) — Zhao et al., AAAI 2024. Extracts reusable experiential knowledge from trajectories.
 - [Voyager](https://arxiv.org/abs/2305.16291) — Wang et al., arXiv 2023. Builds an ever-growing executable skill library in an open-ended environment.
