@@ -74,6 +74,7 @@ This list maps research on that longitudinal dimension: persistent experience, e
 
 ## Evaluation, Surveys & Frontier Systems
 
+- [Self-Improving Agents in the Era of Experience: A Survey of Self- to Meta-Evolution](https://openreview.net/forum?id=IUltZSgLMm) — Jiang et al., OpenReview Archive 2026. Surveys self-improving agents from experience-driven component updates to meta-evolution.
 - [StreamBench](https://proceedings.neurips.cc/paper_files/paper/2024/hash/c189915371c4474fe9789be3728113fc-Abstract-Datasets_and_Benchmarks_Track.html) — Wu et al., NeurIPS 2024. Benchmarks continuous improvement in language agents.
 - [PATH-Bench](https://arxiv.org/abs/2608.01149) — Yang et al., arXiv 2026. Evaluates lifelong agents on path-dependent task histories.
 - [AgentCL](https://arxiv.org/abs/2606.02461) — Shu et al., arXiv 2026. Proposes rigorous evaluation for continual learning in language agents.
