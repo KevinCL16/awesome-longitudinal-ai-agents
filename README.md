@@ -139,9 +139,6 @@ This list maps research on that longitudinal dimension: persistent experience, e
 - [Towards Adjustable Autonomy for the Real World](https://doi.org/10.1613/jair.1037) — Scerri, Pynadath, and Tambe, *JAIR* 2002. Models autonomy adjustments in multi-agent settings.
 - [Rapid Decision Making on the Fire Ground](https://doi.org/10.1518/155534310X12844000801203) — Klein, Calderwood, and Clinton-Cirocco, *Journal of Cognitive Engineering and Decision Making* 2010. Documents recognition-primed expert decisions in field conditions.
 
-## Background
-
-This list grew out of the literature review for *Organizing Intelligence Over Time: Human–AI Collaboration as Joint Cognitive Development*. It is maintained as a standalone research map rather than a frozen copy of the manuscript bibliography; relevant new work can be added as the area develops.
 
 ## Contributing
 
