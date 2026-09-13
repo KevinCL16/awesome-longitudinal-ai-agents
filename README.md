@@ -8,7 +8,7 @@
 
 This list maps research on that longitudinal dimension: persistent experience, experiential learning, reusable workflows and skills, continual and self-evolving agents, adaptive cognitive control, repeated Human–AI adaptation, and evaluation over histories of interaction.
 
-**Companion:** [Organizing Intelligence Over Time — survey landing page](https://kevincl16.github.io/organizing-intelligence-over-time.html)
+**Companion:** [Organizing Intelligence Over Time — survey landing page](https://kevincl16.github.io/organizing-intelligence-over-time.html) · [PDF](https://kevincl16.github.io/Organizing_Intelligence_Over_Time_v1_2026-09-12.pdf)
 
 > **Scope.** Continuity alone is not enough. A long context window, persistent session, generic RAG system, or one-shot Human–AI workflow belongs here only when retained history or repeated interaction materially changes later cognition, behavior, coordination, or capability.
 
