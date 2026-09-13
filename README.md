@@ -10,6 +10,10 @@ This list maps research on that longitudinal dimension: persistent experience, e
 
 **Companion:** [Organizing Intelligence Over Time — survey landing page](https://kevincl16.github.io/organizing-intelligence-over-time.html) · [PDF](https://kevincl16.github.io/Organizing_Intelligence_Over_Time_v1_2026-09-12.pdf)
 
+<p align="center">
+  <img src="assets/joint-cognitive-development-loop-map.svg" alt="Mapping Awesome Longitudinal AI Agents sections to the joint cognitive development loop" width="100%">
+</p>
+
 > **Scope.** Continuity alone is not enough. A long context window, persistent session, generic RAG system, or one-shot Human–AI workflow belongs here only when retained history or repeated interaction materially changes later cognition, behavior, coordination, or capability.
 
 ## Contents
