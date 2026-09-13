@@ -1,0 +1,33 @@
+name: Link survey PDF
+
+on: [push]
+
+permissions:
+  contents: write
+
+jobs:
+  patch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Add PDF link to companion line
+        shell: bash
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          p = Path('README.md')
+          s = p.read_text(encoding='utf-8')
+          old = '**Companion:** [Organizing Intelligence Over Time — survey landing page](https://kevincl16.github.io/organizing-intelligence-over-time.html)'
+          new = '**Companion:** [Organizing Intelligence Over Time — survey landing page](https://kevincl16.github.io/organizing-intelligence-over-time.html) · [PDF](https://kevincl16.github.io/Organizing_Intelligence_Over_Time_v1_2026-09-12.pdf)'
+          if old not in s:
+              raise SystemExit('companion line not found')
+          p.write_text(s.replace(old, new, 1), encoding='utf-8')
+          PY
+          rm .github/workflows/link-survey-pdf.yml
+      - name: Commit
+        run: |
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add README.md .github/workflows/link-survey-pdf.yml
+          git commit -m "feat: add survey PDF link"
+          git push
