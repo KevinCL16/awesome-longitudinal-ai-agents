@@ -46,7 +46,7 @@ This list maps research on that longitudinal dimension: persistent experience, e
 
 - [SkillRL](https://arxiv.org/abs/2602.08234) — Xia et al., arXiv 2026. Uses recursive skill-augmented reinforcement learning to evolve agents.
 - [NeoHorse-1: Towards Recursive Self-Improvement via Agentic Post-Training with Routing Harness](https://arxiv.org/abs/2609.08183) — NeoHorse Team et al., arXiv 2026. Feeds routing signals, execution trajectories, and evaluation feedback into successive post-training mixtures through a prototype evaluation–selection–update loop.
-- [MetaRSI / RSI2: A Meta-Recursive Self-Improving System for Recursive Self-Improving Systems Themselves](https://arxiv.org/abs/2609.06396) — Tan et al., arXiv 2026. Composes Data-RSI, Harness-RSI, and Model-RSI under a meta-level policy that revises operator order and proposal policies across terms.
+- [MetaRSI / RSI2: A Meta-Recursive Self-Improving System for Recursive Self-Improving Systems Themselves](https://arxiv.org/abs/2609.06396) — Tan et al., arXiv 2026. Improves training data, agent harnesses, and model weights in repeated cycles, then uses past results to decide which part of the system to improve next.
 - [Evolving-RL](https://arxiv.org/abs/2605.10663) — Fan et al., arXiv 2026. Optimizes experience-driven self-evolving capability end to end.
 - [EvolveR](https://arxiv.org/abs/2510.16079) — Wu et al., arXiv 2025. Defines an experience-driven lifecycle for self-evolving agents.
 - [Building Self-Evolving Agents via Experience-Driven Lifelong Learning](https://arxiv.org/abs/2508.19005) — Cai et al., arXiv 2025. Offers a framework and benchmark for lifelong agent evolution.
