@@ -8,7 +8,7 @@
 
 This list maps research on that longitudinal dimension: persistent experience, experiential learning, reusable workflows and skills, continual and self-evolving agents, adaptive cognitive control, repeated Human–AI adaptation, and evaluation over histories of interaction.
 
-**Companion:** [Organizing Intelligence Over Time — survey landing page](https://kevincl16.github.io/organizing-intelligence-over-time.html) · [PDF](https://kevincl16.github.io/Organizing_Intelligence_Over_Time_v1_2026-09-12.pdf)
+**Companion:** [Organizing Intelligence Over Time — survey landing page](https://kevincl16.github.io/organizing-intelligence-over-time.html) · [Preprint](https://www.preprints.org/manuscript/202609.1092/v1) · [DOI](https://doi.org/10.20944/preprints202609.1092.v1) · [PDF](https://kevincl16.github.io/Organizing_Intelligence_Over_Time_v1_2026-09-12.pdf)
 
 <p align="center">
   <img src="assets/joint-cognitive-development-loop-map.svg" alt="Mapping Awesome Longitudinal AI Agents sections to the joint cognitive development loop" width="100%">
