@@ -1,14 +1,24 @@
+<div align="center">
+
 # Awesome Longitudinal AI Agents
 
-[![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
+**A curated map of research on a single longitudinal question:**  
+**how does experience from earlier work change later work?**
+
+[![Awesome](https://img.shields.io/badge/Awesome-0066CC?style=for-the-badge&logo=awesome-lists&logoColor=white)](https://awesome.re)
+[![Survey](https://img.shields.io/badge/Survey-Project%20Page-5B5FC7?style=for-the-badge)](https://kevincl16.github.io/organizing-intelligence-over-time.html)
+[![Preprint](https://img.shields.io/badge/Preprint-Preprints.org-A42C25?style=for-the-badge)](https://www.preprints.org/manuscript/202609.1092/v1)
+[![PDF](https://img.shields.io/badge/PDF-Read%20the%20Paper-B31B1B?style=for-the-badge&logo=adobeacrobatreader&logoColor=white)](https://kevincl16.github.io/Organizing_Intelligence_Over_Time_v1_2026-09-12.pdf)
+[![DOI](https://img.shields.io/badge/DOI-10.20944%2Fpreprints202609.1092.v1-147C78?style=for-the-badge)](https://doi.org/10.20944/preprints202609.1092.v1)
+
 [![License: CC0-1.0](https://img.shields.io/badge/license-CC0--1.0-blue.svg)](LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
 
+</div>
+
 **Longitudinal AI agents** are systems whose history of work changes how they work later. Experience from earlier tasks or interactions may alter what an agent remembers, which procedures or skills it reuses, how it allocates reasoning and verification, when it asks for help, or how a human–AI team coordinates over time.
 
-This list maps research on that longitudinal dimension: persistent experience, experiential learning, reusable workflows and skills, continual and self-evolving agents, adaptive cognitive control, repeated Human–AI adaptation, and evaluation over histories of interaction.
-
-**Companion:** [Organizing Intelligence Over Time — survey landing page](https://kevincl16.github.io/organizing-intelligence-over-time.html) · [Preprint](https://www.preprints.org/manuscript/202609.1092/v1) · [DOI](https://doi.org/10.20944/preprints202609.1092.v1) · [PDF](https://kevincl16.github.io/Organizing_Intelligence_Over_Time_v1_2026-09-12.pdf)
+This list maps research on that longitudinal dimension: persistent experience, experiential learning, reusable workflows and skills, continual and self-evolving agents, adaptive cognitive control, repeated Human–AI adaptation, and evaluation over histories of interaction. It accompanies the survey [**Organizing Intelligence Over Time**](https://kevincl16.github.io/organizing-intelligence-over-time.html).
 
 <p align="center">
   <img src="assets/joint-cognitive-development-loop-map.svg" alt="Mapping Awesome Longitudinal AI Agents sections to the joint cognitive development loop" width="100%">
