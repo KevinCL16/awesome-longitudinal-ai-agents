@@ -1,0 +1,42 @@
+name: Add OpenReview link
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/add-openreview-link.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Add OpenReview badge to README
+        shell: bash
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          p = Path('README.md')
+          s = p.read_text()
+          needle = '[![Preprint](https://img.shields.io/badge/Preprint-Preprints.org-A42C25?style=for-the-badge)](https://www.preprints.org/manuscript/202609.1092/v1)\n[![PDF](https://img.shields.io/badge/PDF-Read%20the%20Paper-B31B1B?style=for-the-badge&logo=adobeacrobatreader&logoColor=white)](https://kevincl16.github.io/Organizing_Intelligence_Over_Time_v1_2026-09-12.pdf)'
+          replacement = '[![Preprint](https://img.shields.io/badge/Preprint-Preprints.org-A42C25?style=for-the-badge)](https://www.preprints.org/manuscript/202609.1092/v1)\n[![OpenReview](https://img.shields.io/badge/OpenReview-Ad9jfySutr-6B4FA1?style=for-the-badge)](https://openreview.net/forum?id=Ad9jfySutr)\n[![PDF](https://img.shields.io/badge/PDF-Read%20the%20Paper-B31B1B?style=for-the-badge&logo=adobeacrobatreader&logoColor=white)](https://kevincl16.github.io/Organizing_Intelligence_Over_Time_v1_2026-09-12.pdf)'
+          if 'https://openreview.net/forum?id=Ad9jfySutr' not in s:
+              if needle not in s:
+                  raise SystemExit('Expected README badge block not found')
+              s = s.replace(needle, replacement, 1)
+              p.write_text(s)
+          PY
+
+      - name: Commit update and remove temporary workflow
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git rm .github/workflows/add-openreview-link.yml
+          git add README.md
+          git commit -m "Add OpenReview link"
+          git push
