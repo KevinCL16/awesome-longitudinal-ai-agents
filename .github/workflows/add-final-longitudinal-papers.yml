@@ -1,0 +1,59 @@
+name: Add final longitudinal papers
+
+on: [push]
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Add final high-match papers
+        run: |
+          python <<'PY'
+          from pathlib import Path
+
+          path = Path('README.md')
+          text = path.read_text(encoding='utf-8')
+
+          experience = "\n".join([
+              "- [Beyond Meta-Reasoning: Metacognitive Consolidation for Self-Improving LLM Reasoning](https://arxiv.org/abs/2604.17399) — Zhuang et al., arXiv 2026. Consolidates reasoning, monitoring, and control traces from earlier episodes into reusable metacognitive knowledge for later reasoning.",
+              "- [Live-Evo: Online Evolution of Agentic Memory from Continuous Feedback](https://arxiv.org/abs/2602.02369) — Zhang et al., arXiv 2026. Updates the value of retained memories from subsequent outcomes so experience can be reinforced, downweighted, or forgotten over an online stream.",
+              "- [Memory Transfer Learning: How Memories are Transferred Across Domains in Coding Agents](https://arxiv.org/abs/2604.14004) — Kim et al., arXiv 2026. Studies cross-domain transfer of retained experience and shows that overly specific memories can produce negative transfer.",
+              "- [Self-Consolidation for Self-Evolving Agents](https://arxiv.org/abs/2602.01966) — Yu et al., arXiv 2026. Consolidates lessons from successful and failed trajectories into compact persistent experience rather than accumulating raw traces indefinitely.",
+              "- [RetroAgent: From Solving to Evolving via Retrospective Dual Intrinsic Feedback](https://arxiv.org/abs/2603.08561) — Zhang et al., arXiv 2026. Builds reusable language memory from retrospective feedback and retrieves prior experience by similarity, utility, and exploration value.",
+              "- [Evolving from Tool User to Creator via Training-Free Experience Reuse in Multimodal Reasoning](https://arxiv.org/abs/2602.01983) — Shen et al., arXiv 2026. Converts successful reasoning traces into reusable tools and maintains them through experience consolidation for later tasks.",
+              "- [Experience as a Compass: Multi-agent RAG with Evolving Orchestration and Agent Prompts](https://arxiv.org/abs/2604.00901) — Li et al., arXiv 2026. Uses accumulated experience to revise both multi-agent orchestration and individual agent prompts for subsequent work.",
+          ])
+
+          continual = "\n".join([
+              "- [FLEX: Continuous Agent Evolution via Forward Learning from Experience](https://arxiv.org/abs/2511.06449) — Cai et al., arXiv 2025. Converts successful and failed episodes into structured reusable experience and studies scaling and transfer across later tasks and agents.",
+              "- [Learning to Continually Learn via Meta-learning Agentic Memory Designs](https://arxiv.org/abs/2602.07755) — Xiong et al., arXiv 2026. Meta-learns memory schemas, retrieval, and update mechanisms from sequential experience so the agent can improve how it learns over time.",
+          ])
+
+          adaptive = "- [Ask Only When Needed: Proactive Retrieval from Memory and Skills for Experience-Driven Lifelong Agents](https://arxiv.org/abs/2604.20572) — Cai et al., arXiv 2026. Learns when retained memory or skills should be reopened for a later task rather than retrieving experience indiscriminately."
+
+          if 'Beyond Meta-Reasoning: Metacognitive Consolidation for Self-Improving LLM Reasoning' not in text:
+              marker = '- [WebCoach: Self-Evolving Web Agents with Cross-Session Memory Guidance](https://arxiv.org/abs/2511.12997) — Liu et al., ICLR 2026. Curates cross-session episodic memory and injects advice distilled from earlier web trajectories into later sessions.'
+              text = text.replace(marker, marker + '\n' + experience)
+
+          if 'FLEX: Continuous Agent Evolution via Forward Learning from Experience' not in text:
+              marker = '- [Continual Harness: Online Adaptation for Self-Improving Foundation Agents](https://arxiv.org/abs/2605.09998) — Karten et al., arXiv 2026. Rewrites prompts, sub-agents, skills, and memory online from past trajectory data without resetting the environment.'
+              text = text.replace(marker, marker + '\n' + continual)
+
+          if 'Ask Only When Needed: Proactive Retrieval from Memory and Skills for Experience-Driven Lifelong Agents' not in text:
+              marker = '- [Just-In-Time Reinforcement Learning](https://arxiv.org/abs/2601.18510) — Li et al., arXiv 2026. Adapts an LLM agent continually without gradient updates.'
+              text = text.replace(marker, marker + '\n' + adaptive)
+
+          path.write_text(text, encoding='utf-8')
+          Path('.github/workflows/add-final-longitudinal-papers.yml').unlink()
+          PY
+      - name: Commit additions
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add README.md .github/workflows/add-final-longitudinal-papers.yml
+          git commit -m "Complete longitudinal literature additions"
+          git push
