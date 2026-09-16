@@ -8,6 +8,7 @@
 [![Awesome](https://img.shields.io/badge/Awesome-0066CC?style=for-the-badge&logo=awesome-lists&logoColor=white)](https://awesome.re)
 [![Survey](https://img.shields.io/badge/Survey-Project%20Page-5B5FC7?style=for-the-badge)](https://kevincl16.github.io/organizing-intelligence-over-time.html)
 [![Preprint](https://img.shields.io/badge/Preprint-Preprints.org-A42C25?style=for-the-badge)](https://www.preprints.org/manuscript/202609.1092/v1)
+[![OpenReview](https://img.shields.io/badge/OpenReview-Ad9jfySutr-6B4FA1?style=for-the-badge)](https://openreview.net/forum?id=Ad9jfySutr)
 [![PDF](https://img.shields.io/badge/PDF-Read%20the%20Paper-B31B1B?style=for-the-badge&logo=adobeacrobatreader&logoColor=white)](https://kevincl16.github.io/Organizing_Intelligence_Over_Time_v1_2026-09-12.pdf)
 [![DOI](https://img.shields.io/badge/DOI-10.20944%2Fpreprints202609.1092.v1-147C78?style=for-the-badge)](https://doi.org/10.20944/preprints202609.1092.v1)
 
