@@ -1,20 +1,18 @@
 name: Add longitudinal literature gap papers
 
-on:
-  push:
+on: [push]
 
 permissions:
   contents: write
 
 jobs:
   update:
-    if: github.actor != 'github-actions[bot]'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - name: Add high-match papers from literature gap audit
-        shell: python
         run: |
+          python <<'PY'
           from pathlib import Path
 
           path = Path('README.md')
@@ -52,6 +50,7 @@ jobs:
 
           path.write_text(text, encoding='utf-8')
           Path('.github/workflows/add-longitudinal-gap-papers.yml').unlink()
+          PY
       - name: Commit additions
         run: |
           git config user.name "github-actions[bot]"
