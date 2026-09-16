@@ -52,6 +52,16 @@ This list maps research on that longitudinal dimension: persistent experience, e
 - [Remember Me, Refine Me](https://doi.org/10.18653/v1/2026.findings-acl.829) — Cao et al., Findings of ACL 2026. Dynamically refines procedural memory as experience arrives.
 - [Meta Context Engineering via Agentic Skill Evolution](https://arxiv.org/abs/2601.21557) — Ye et al., arXiv 2026. Evolves skills that restructure later context construction.
 - [Prime Agent](https://arxiv.org/abs/2608.23552) — Karten et al., technical report 2026. Uses a harness to iteratively improve an RLM agent from prior outcomes.
+- [Contextual Experience Replay for Self-Improvement of Language Agents](https://aclanthology.org/2025.acl-long.694/) — Liu et al., ACL 2025. Accumulates and synthesizes past trajectories into a dynamic memory buffer that is retrieved to guide later tasks.
+- [Rethinking Experience Utilization in Self-Evolving Language Model Agents](https://arxiv.org/abs/2605.07164) — Zhao et al., arXiv 2026. Treats stored experience as an optional runtime resource and learns when it should enter later decision-making.
+- [Experience Graphs: The Data Foundation for Self-Improving Agents](https://arxiv.org/abs/2606.29823) — Liao et al., arXiv 2026. Makes artifacts, tool outputs, rewards, comparisons, and causal lineage durable queryable state for cross-session reuse.
+- [AgentFactory: A Self-Evolving Framework Through Executable Subagent Accumulation and Reuse](https://arxiv.org/abs/2603.18000) — Zhang et al., arXiv 2026. Preserves successful solutions as executable subagents that are refined from later execution feedback and reused across tasks.
+- [GraphMind: From Operational Traces to Self-Evolving Workflow Automation](https://arxiv.org/abs/2605.17617) — Zhu et al., arXiv 2026. Builds workflow graphs from prior resolution traces and adapts them using feedback from subsequent executions.
+- [Group-Evolving Agents: Open-Ended Self-Improvement via Experience Sharing](https://arxiv.org/abs/2602.04837) — Weng et al., arXiv 2026. Shares and reuses experience across evolving agent variants so exploratory diversity can become cumulative progress.
+- [SkillRevise: Improving LLM-Authored Agent Skills via Trace-Conditioned Skill Revision](https://arxiv.org/abs/2606.01139) — Liu et al., Findings of EMNLP 2026. Revises reusable procedural skills from execution evidence and retains variants that empirically improve later runs.
+- [ReasoningBank: Scaling Agent Self-Evolving with Reasoning Memory](https://arxiv.org/abs/2509.25140) — Ouyang et al., ICLR 2026. Distills generalizable reasoning strategies from successful and failed trajectories into memory that guides later tasks.
+- [Mem2Evolve: Towards Self-Evolving Agents via Co-Evolutionary Capability Expansion and Experience Distillation](https://aclanthology.org/2026.acl-long.952/) — Cheng et al., ACL 2026. Couples experience distillation with creation of new tools and expert agents so accumulated experience expands later capability.
+- [WebCoach: Self-Evolving Web Agents with Cross-Session Memory Guidance](https://arxiv.org/abs/2511.12997) — Liu et al., ICLR 2026. Curates cross-session episodic memory and injects advice distilled from earlier web trajectories into later sessions.
 
 ## Continual & Self-Evolving Agents
 
@@ -64,6 +74,7 @@ This list maps research on that longitudinal dimension: persistent experience, e
 - [LifelongAgentBench](https://arxiv.org/abs/2505.11942) — Zheng et al., arXiv 2025. Evaluates whether LLM agents retain and adapt across tasks.
 - [Agent Lightning](https://arxiv.org/abs/2508.03680) — Luo et al., arXiv 2025. Provides reinforcement-learning infrastructure for training heterogeneous agents.
 - [SkillOS](https://arxiv.org/abs/2605.06614) — Ouyang et al., arXiv 2026. Learns to curate skills for a self-evolving agent.
+- [Continual Harness: Online Adaptation for Self-Improving Foundation Agents](https://arxiv.org/abs/2605.09998) — Karten et al., arXiv 2026. Rewrites prompts, sub-agents, skills, and memory online from past trajectory data without resetting the environment.
 
 ## Adaptive Cognitive Control
 
@@ -100,6 +111,10 @@ This list maps research on that longitudinal dimension: persistent experience, e
 - [ContinualSkillBench](https://arxiv.org/abs/2608.03874) — Guan et al., arXiv 2026. Tests whether agents truly develop durable capabilities.
 - [Do Agent Optimizers Compound?](https://arxiv.org/abs/2607.14004) — Wang, Kattakinda, and Feizi, RELAI technical report 2026. Evaluates continual improvement on Terminal-Bench 2.0.
 - [Welcome to the Era of Experience](https://www.cs.ox.ac.uk/people/david.silver/web/Welcome_to_the_Era_of_Experience.pdf) — Silver and Sutton, perspective 2025. Argues for learning directly from continuing experience.
+- [FinEvolveBench: A Benchmark for Self-Evolving Agents on Low-Repetition Tasks with Implicit Rewards](https://arxiv.org/abs/2606.06960) — Deng et al., arXiv 2026. Tests whether agents can convert noisy, delayed outcomes into reusable experience on low-repetition task streams.
+- [Useful Memories Become Faulty When Continuously Updated by LLMs](https://arxiv.org/abs/2605.12978) — Zhang et al., arXiv 2026. Shows that repeated memory consolidation can reverse earlier gains and fall below a no-memory baseline.
+- [Library Drift: Diagnosing and Fixing a Silent Failure Mode in Self-Evolving LLM Skill Libraries](https://arxiv.org/abs/2605.19576) — Zhang et al., ICML 2026 Workshop. Shows how unbounded skill accumulation can degrade retrieval quality and later performance without lifecycle control.
+- [Harness Updating Is Not Harness Benefit: Disentangling Evolution Capabilities in Self-Evolving LLM Agents](https://arxiv.org/abs/2605.30621) — Lin et al., arXiv 2026. Separates the ability to produce useful persistent harness updates from the ability of later task-solving agents to benefit from them.
 
 ### Company engineering, deployment, and research reports
 
