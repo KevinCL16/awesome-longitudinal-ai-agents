@@ -62,6 +62,13 @@ This list maps research on that longitudinal dimension: persistent experience, e
 - [ReasoningBank: Scaling Agent Self-Evolving with Reasoning Memory](https://arxiv.org/abs/2509.25140) — Ouyang et al., ICLR 2026. Distills generalizable reasoning strategies from successful and failed trajectories into memory that guides later tasks.
 - [Mem2Evolve: Towards Self-Evolving Agents via Co-Evolutionary Capability Expansion and Experience Distillation](https://aclanthology.org/2026.acl-long.952/) — Cheng et al., ACL 2026. Couples experience distillation with creation of new tools and expert agents so accumulated experience expands later capability.
 - [WebCoach: Self-Evolving Web Agents with Cross-Session Memory Guidance](https://arxiv.org/abs/2511.12997) — Liu et al., ICLR 2026. Curates cross-session episodic memory and injects advice distilled from earlier web trajectories into later sessions.
+- [Beyond Meta-Reasoning: Metacognitive Consolidation for Self-Improving LLM Reasoning](https://arxiv.org/abs/2604.17399) — Zhuang et al., arXiv 2026. Consolidates reasoning, monitoring, and control traces from earlier episodes into reusable metacognitive knowledge for later reasoning.
+- [Live-Evo: Online Evolution of Agentic Memory from Continuous Feedback](https://arxiv.org/abs/2602.02369) — Zhang et al., arXiv 2026. Updates the value of retained memories from subsequent outcomes so experience can be reinforced, downweighted, or forgotten over an online stream.
+- [Memory Transfer Learning: How Memories are Transferred Across Domains in Coding Agents](https://arxiv.org/abs/2604.14004) — Kim et al., arXiv 2026. Studies cross-domain transfer of retained experience and shows that overly specific memories can produce negative transfer.
+- [Self-Consolidation for Self-Evolving Agents](https://arxiv.org/abs/2602.01966) — Yu et al., arXiv 2026. Consolidates lessons from successful and failed trajectories into compact persistent experience rather than accumulating raw traces indefinitely.
+- [RetroAgent: From Solving to Evolving via Retrospective Dual Intrinsic Feedback](https://arxiv.org/abs/2603.08561) — Zhang et al., arXiv 2026. Builds reusable language memory from retrospective feedback and retrieves prior experience by similarity, utility, and exploration value.
+- [Evolving from Tool User to Creator via Training-Free Experience Reuse in Multimodal Reasoning](https://arxiv.org/abs/2602.01983) — Shen et al., arXiv 2026. Converts successful reasoning traces into reusable tools and maintains them through experience consolidation for later tasks.
+- [Experience as a Compass: Multi-agent RAG with Evolving Orchestration and Agent Prompts](https://arxiv.org/abs/2604.00901) — Li et al., arXiv 2026. Uses accumulated experience to revise both multi-agent orchestration and individual agent prompts for subsequent work.
 
 ## Continual & Self-Evolving Agents
 
@@ -75,6 +82,8 @@ This list maps research on that longitudinal dimension: persistent experience, e
 - [Agent Lightning](https://arxiv.org/abs/2508.03680) — Luo et al., arXiv 2025. Provides reinforcement-learning infrastructure for training heterogeneous agents.
 - [SkillOS](https://arxiv.org/abs/2605.06614) — Ouyang et al., arXiv 2026. Learns to curate skills for a self-evolving agent.
 - [Continual Harness: Online Adaptation for Self-Improving Foundation Agents](https://arxiv.org/abs/2605.09998) — Karten et al., arXiv 2026. Rewrites prompts, sub-agents, skills, and memory online from past trajectory data without resetting the environment.
+- [FLEX: Continuous Agent Evolution via Forward Learning from Experience](https://arxiv.org/abs/2511.06449) — Cai et al., arXiv 2025. Converts successful and failed episodes into structured reusable experience and studies scaling and transfer across later tasks and agents.
+- [Learning to Continually Learn via Meta-learning Agentic Memory Designs](https://arxiv.org/abs/2602.07755) — Xiong et al., arXiv 2026. Meta-learns memory schemas, retrieval, and update mechanisms from sequential experience so the agent can improve how it learns over time.
 
 ## Adaptive Cognitive Control
 
@@ -82,6 +91,7 @@ This list maps research on that longitudinal dimension: persistent experience, e
 - [CoBa](https://arxiv.org/abs/2608.07424) — Zhou et al., arXiv 2026. Routes requests to balance accuracy against test-time cost.
 - [Reason Wide, Not Deep](https://arxiv.org/abs/2608.07885) — Singh et al., arXiv 2026. Amortizes reasoning into distilled skills rather than repeated deep deliberation.
 - [Just-In-Time Reinforcement Learning](https://arxiv.org/abs/2601.18510) — Li et al., arXiv 2026. Adapts an LLM agent continually without gradient updates.
+- [Ask Only When Needed: Proactive Retrieval from Memory and Skills for Experience-Driven Lifelong Agents](https://arxiv.org/abs/2604.20572) — Cai et al., arXiv 2026. Learns when retained memory or skills should be reopened for a later task rather than retrieving experience indiscriminately.
 - [EvoRoute](https://doi.org/10.18653/v1/2026.acl-long.1771) — Zhang et al., ACL 2026. Learns routing policies from experience.
 - [EET](https://doi.org/10.18653/v1/2026.findings-acl.1652) — Guo et al., Findings of ACL 2026. Learns when software-engineering agents should terminate early.
 
