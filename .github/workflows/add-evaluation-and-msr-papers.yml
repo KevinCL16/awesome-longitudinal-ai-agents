@@ -1,0 +1,49 @@
+name: Add evaluation and MSR papers
+
+on: [push]
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Update README
+        run: |
+          python <<'PY'
+          from pathlib import Path
+
+          p = Path('README.md')
+          text = p.read_text(encoding='utf-8')
+
+          msr = "- [Agentic Evolution: From Self-Improving Agents to Co-Evolving Human–AI Systems](https://www.microsoft.com/en-us/research/publication/agentic-evolution-from-self-improving-agents-to-co-evolving-human-ai-systems/) — Microsoft Research, 2026. Frames human feedback as endogenous to long-run agent evolution and studies co-evolving human–AI systems in which interaction can change the human evaluator as well as the agent."
+          if 'Agentic Evolution: From Self-Improving Agents to Co-Evolving Human–AI Systems' not in text:
+              marker = '## Human–AI Adaptation\n\n'
+              text = text.replace(marker, marker + msr + '\n')
+
+          eval_lines = [
+              "- [SEA-Eval: A Benchmark for Evaluating Self-Evolving Agents Beyond Episodic Assessment](https://arxiv.org/abs/2604.08988) — arXiv 2026. Evaluates agents over sequential task streams and measures evolution trajectories rather than only final episodic performance.",
+              "- [PAST-Bench: Benchmarking the Foundations of Recursive Self-Improvement in Personal Agents](https://arxiv.org/abs/2608.04003) — arXiv 2026. Uses ordered fresh-session sequences and controlled retained-experience conditions to test whether later gains arise through the intended persistence pathway.",
+              "- [BenchTrace: A Benchmark for Testing Reflection Ability and Controlled Evolution in LLM Agents](https://arxiv.org/abs/2605.29225) — arXiv 2026. Controls prior failures and intervening histories to measure retention, forgetting, transfer, and negative transfer from accumulated lessons.",
+              "- [EvoMemBench: Benchmarking Agent Memory from a Self-Evolving Perspective](https://arxiv.org/abs/2605.18421) — arXiv 2026. Separates in-episode and cross-episode memory and tests when stored knowledge or procedures actually improve later tasks.",
+              "- [SE-BENCH: Benchmarking Self-Evolution with Knowledge Internalization](https://arxiv.org/abs/2602.04811) — arXiv 2026. Uses pseudo-novel knowledge to distinguish genuine learning from gains attributable to pretrained knowledge.",
+              "- [SAGE: A Quantitative Evaluation of Socialized Evolution in Agent Ecosystems](https://arxiv.org/abs/2606.03544) — arXiv 2026. Compares self-only and socially shared experience to study how the distribution of experience changes later capability and can induce negative transfer.",
+              "- [ClawArena: Benchmarking AI Agents in Evolving Information Environments](https://arxiv.org/abs/2604.04202) — arXiv 2026. Tests persistent agents when the environment itself changes, requiring belief revision as facts, evidence, and user preferences evolve over time."
+          ]
+          if 'SEA-Eval: A Benchmark for Evaluating Self-Evolving Agents Beyond Episodic Assessment' not in text:
+              marker = '- [Harness Updating Is Not Harness Benefit: Disentangling Evolution Capabilities in Self-Evolving LLM Agents](https://arxiv.org/abs/2605.30621) — Lin et al., arXiv 2026. Separates the ability to produce useful persistent harness updates from the ability of later task-solving agents to benefit from them.'
+              text = text.replace(marker, marker + '\n' + '\n'.join(eval_lines))
+
+          p.write_text(text, encoding='utf-8')
+          Path('.github/workflows/add-evaluation-and-msr-papers.yml').unlink()
+          PY
+      - name: Commit update
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add README.md .github/workflows/add-evaluation-and-msr-papers.yml
+          git commit -m "Add longitudinal evaluation and co-evolution references"
+          git push
