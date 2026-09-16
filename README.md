@@ -87,6 +87,7 @@ This list maps research on that longitudinal dimension: persistent experience, e
 
 ## Human–AI Adaptation
 
+- [Agentic Evolution: From Self-Improving Agents to Co-Evolving Human–AI Systems](https://www.microsoft.com/en-us/research/publication/agentic-evolution-from-self-improving-agents-to-co-evolving-human-ai-systems/) — Microsoft Research, 2026. Frames human feedback as endogenous to long-run agent evolution and studies co-evolving human–AI systems in which interaction can change the human evaluator as well as the agent.
 - [SARI](https://doi.org/10.1145/3651994) — Jonnavittula, Mehta, and Losey, *ACM THRI* 2024. Studies shared autonomy across repeated human–robot interaction.
 - [Updates in Human-AI Teams](https://doi.org/10.1609/aaai.v33i01.33012429) — Bansal et al., AAAI 2019. Examines the performance–compatibility tradeoff as teams update.
 - [Human–Robot Mutual Adaptation in Shared Autonomy](https://doi.org/10.1145/2909824.3020252) — Nikolaidis et al., HRI 2017. Learns human preferences and adapts robot assistance jointly.
@@ -115,6 +116,13 @@ This list maps research on that longitudinal dimension: persistent experience, e
 - [Useful Memories Become Faulty When Continuously Updated by LLMs](https://arxiv.org/abs/2605.12978) — Zhang et al., arXiv 2026. Shows that repeated memory consolidation can reverse earlier gains and fall below a no-memory baseline.
 - [Library Drift: Diagnosing and Fixing a Silent Failure Mode in Self-Evolving LLM Skill Libraries](https://arxiv.org/abs/2605.19576) — Zhang et al., ICML 2026 Workshop. Shows how unbounded skill accumulation can degrade retrieval quality and later performance without lifecycle control.
 - [Harness Updating Is Not Harness Benefit: Disentangling Evolution Capabilities in Self-Evolving LLM Agents](https://arxiv.org/abs/2605.30621) — Lin et al., arXiv 2026. Separates the ability to produce useful persistent harness updates from the ability of later task-solving agents to benefit from them.
+- [SEA-Eval: A Benchmark for Evaluating Self-Evolving Agents Beyond Episodic Assessment](https://arxiv.org/abs/2604.08988) — arXiv 2026. Evaluates agents over sequential task streams and measures evolution trajectories rather than only final episodic performance.
+- [PAST-Bench: Benchmarking the Foundations of Recursive Self-Improvement in Personal Agents](https://arxiv.org/abs/2608.04003) — arXiv 2026. Uses ordered fresh-session sequences and controlled retained-experience conditions to test whether later gains arise through the intended persistence pathway.
+- [BenchTrace: A Benchmark for Testing Reflection Ability and Controlled Evolution in LLM Agents](https://arxiv.org/abs/2605.29225) — arXiv 2026. Controls prior failures and intervening histories to measure retention, forgetting, transfer, and negative transfer from accumulated lessons.
+- [EvoMemBench: Benchmarking Agent Memory from a Self-Evolving Perspective](https://arxiv.org/abs/2605.18421) — arXiv 2026. Separates in-episode and cross-episode memory and tests when stored knowledge or procedures actually improve later tasks.
+- [SE-BENCH: Benchmarking Self-Evolution with Knowledge Internalization](https://arxiv.org/abs/2602.04811) — arXiv 2026. Uses pseudo-novel knowledge to distinguish genuine learning from gains attributable to pretrained knowledge.
+- [SAGE: A Quantitative Evaluation of Socialized Evolution in Agent Ecosystems](https://arxiv.org/abs/2606.03544) — arXiv 2026. Compares self-only and socially shared experience to study how the distribution of experience changes later capability and can induce negative transfer.
+- [ClawArena: Benchmarking AI Agents in Evolving Information Environments](https://arxiv.org/abs/2604.04202) — arXiv 2026. Tests persistent agents when the environment itself changes, requiring belief revision as facts, evidence, and user preferences evolve over time.
 
 ### Company engineering, deployment, and research reports
 
