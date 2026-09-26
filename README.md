@@ -70,6 +70,19 @@ This list maps research on that longitudinal dimension: persistent experience, e
 - [Evolving from Tool User to Creator via Training-Free Experience Reuse in Multimodal Reasoning](https://arxiv.org/abs/2602.01983) — Shen et al., arXiv 2026. Converts successful reasoning traces into reusable tools and maintains them through experience consolidation for later tasks.
 - [Experience as a Compass: Multi-agent RAG with Evolving Orchestration and Agent Prompts](https://arxiv.org/abs/2604.00901) — Li et al., arXiv 2026. Uses accumulated experience to revise both multi-agent orchestration and individual agent prompts for subsequent work.
 
+
+### Offline Consolidation & Sleep-Time Learning
+
+- [Language Models Need Sleep: Learning to Self-Modify and Consolidate Memories](https://arxiv.org/abs/2606.03979) — Behrouz et al., arXiv 2026. Introduces a wake–sleep continual-learning paradigm that consolidates short-term memories into model parameters and uses a self-generated dreaming curriculum for further improvement.
+- [MetaReflection: Learning Instructions for Language Agents using Past Reflections](https://aclanthology.org/2024.emnlp-main.477/) — Gupta et al., EMNLP 2024. Uses offline reinforcement learning to turn experiential lessons from past trials into semantic memory that guides later agent behavior.
+- [A-Mem: Agentic Memory for LLM Agents](https://proceedings.neurips.cc/paper_files/paper/2025/hash/19909c36f51abc4856b4560aff3d36d6-Abstract-Conference.html) — Xu et al., NeurIPS 2025. Dynamically links and reorganizes historical memories so new experience can revise the representation of older memories.
+- [EverMemOS: A Self-Organizing Memory Operating System for Structured Long-Horizon Reasoning](https://aclanthology.org/2026.acl-long.2125/) — Hu et al., ACL 2026. Consolidates episodic traces into stable thematic semantic structures and reconstructs them for later long-horizon reasoning.
+- [LightMem: Lightweight and Efficient Memory-Augmented Generation](https://proceedings.iclr.cc/paper_files/paper/2026/hash/a05b72653ec5b473732129829ae04195-Abstract-Conference.html) — Fang et al., ICLR 2026. Separates online memory use from a sleep-time offline update that consolidates short-term information into long-term memory.
+- [RecMem: Recurrence-based Memory Consolidation for Efficient and Effective Long-Running LLM Agents](https://aclanthology.org/2026.findings-acl.1619/) — Dai et al., Findings of ACL 2026. Recurrently consolidates interaction history into compact memory for efficient long-running agent behavior.
+- [Sleep-time Compute: Beyond Inference Scaling at Test-time](https://arxiv.org/abs/2504.13171) — Lin et al., arXiv 2025. Moves reasoning about persistent context into an offline phase before future queries, amortizing computation across later tasks.
+- [From Execution to Capability: Scientific Experience Consolidation via Procedural Knowledge Synthesis](https://arxiv.org/abs/2607.24459) — Dong et al., arXiv 2026. Converts verified scientific-computing trajectories into cross-task procedural knowledge and then internalizes that knowledge into a target model.
+
+
 ## Continual & Self-Evolving Agents
 
 - [SkillRL](https://arxiv.org/abs/2602.08234) — Xia et al., arXiv 2026. Uses recursive skill-augmented reinforcement learning to evolve agents.
